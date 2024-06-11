@@ -24,12 +24,12 @@ function somar() {
   //E a variável "resultado_soma" recebe o valor da soma
   let resultado_soma = primeiro_Numero__maior > segundo_numero_maior;
 
-  if (primeiro_Numero__maior>segundo_numero_maior) {
-
+  if (primeiro_Numero__maior > segundo_numero_maior) {
+    document.getElementById("resultado_soma").value = resultado_soma;
   }
 
   //Aqui vai escrever no input "resultado_soma" o valor que está armazenado na variável "resultado_soma"
-  document.getElementById("resultado_soma").value = resultado_soma;
+
 
 
 }
