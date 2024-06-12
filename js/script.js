@@ -3,33 +3,31 @@ meuFormulario.addEventListener("submit", function(event) {
   event.preventDefault();
 
   //Chama a função somar
-  somar();
+  maior();
 
 });
 
 
 //Função somar
-function somar() {
+function maior() {
 
   //Captura o que está dentro do primeiro input no formulário
   //Number - Transforma o texto capturado em Numero
-  let primeiro_Numero__maior = Number(document.getElementById("primeiro_Numero__maior ").value);
+  let primeiroNumero = Number(document.getElementById("primeiroNumero").value);
 
   //Captura o que está dentro do segundo input no formulário
   //Number - Transforma o texto capturado em Numero
-  let segundo_numero_maior= Number(document.getElementById("segundo_numero_maior").value);
+  let segundoNumero= Number(document.getElementById("segundoNumero").value);
 
   //Realiza a soma do valor que está na variável "primeiro_numero_inteiro" com o valor que está na
   //variável "segundo_numero_inteiro"
   //E a variável "resultado_soma" recebe o valor da soma
-  let resultado_soma = primeiro_Numero__maior > segundo_numero_maior;
+  let resultado_maior = primeiroNumero > segundoNumero;
 
-  if (primeiro_Numero__maior > segundo_numero_maior) {
-    document.getElementById("resultado_soma").value = resultado_soma;
+  if (primeiroNumero > segundoNumero) {
+    document.getElementById("resultado").value = "primeiroNumero e maior";
+    //Aqui vai escrever no input "resultado" o valor que está armazenado na variável "resultado"
+
   }
-
-  //Aqui vai escrever no input "resultado_soma" o valor que está armazenado na variável "resultado_soma"
-
-
 
 }
