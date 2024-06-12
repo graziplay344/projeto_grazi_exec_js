@@ -25,9 +25,9 @@ function maior() {
   let resultado_maior = primeiroNumero > segundoNumero;
 
   if (primeiroNumero > segundoNumero) {
-    document.getElementById("resultado").value = "primeiroNumero e maior";
-    //Aqui vai escrever no input "resultado" o valor que está armazenado na variável "resultado"
-
+    document.getElementById("resultado").value = "primeiro Numero e maior";
+  } else {
+      document.getElementById("resultado").value = "segundo Numero e maior";
   }
 
 }
